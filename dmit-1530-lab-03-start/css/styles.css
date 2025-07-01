@@ -60,6 +60,12 @@ header li {
     margin: 2.5rem 0.25rem 1rem;
 }
 
+
+.icon {
+    position: relative;
+    margin-right: 0.7rem;
+}
+
 .number {
     background-color: var(--rose-700);
     color: var(--slate-50);
@@ -71,11 +77,6 @@ header li {
     position: absolute;
     top: -0.7rem;
     right: -0.6rem;
-}
-
-.icon {
-    position: relative;
-    margin-right: 0.7rem;
 }
 
 header ul li:nth-of-type(3) svg {
