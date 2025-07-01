@@ -25,6 +25,13 @@ h1 {
     font-weight: normal;
 }
 
+ul{
+    padding: 0;
+}
+
+a {
+    all: unset;
+}
 /* Header Styles */
 
 header {
@@ -32,6 +39,40 @@ header {
     border-bottom: 1px solid var(--slate-200);
     box-shadow: var(--box-shadow);
     padding: 0.5rem;
+}
+
+svg {
+    width: 2rem;
+}
+
+header nav a, .icon{
+    display: flex;
+}
+
+header li{
+    margin: 3rem 0.25rem;
+}
+
+.number {
+    background-color: var(--rose-700);
+    color: var(--slate-50);
+    font-size: 1rem;
+    padding: 0.05rem 0.5rem;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: -0.7rem;
+    right: -0.4rem;
+}
+
+.icon {
+    position: relative;
+    margin-right: 0.7rem;
+}
+
+header ul li:nth-of-type(3) svg{
+    margin-right: 0.8rem;
 }
 
 /* Media Query */
