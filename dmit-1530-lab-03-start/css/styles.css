@@ -20,18 +20,24 @@ body {
     font-size: 1.25rem;
 }
 
+.container {
+    max-width: 1028px;
+    margin: 0 auto;
+}
+
 h1 {
     font-size: 1.65rem;
     font-weight: normal;
 }
 
-ul{
+ul {
     padding: 0;
 }
 
 a {
     all: unset;
 }
+
 /* Header Styles */
 
 header {
@@ -42,15 +48,16 @@ header {
 }
 
 svg {
-    width: 2rem;
+    width: 1.7rem;
 }
 
-header nav a, .icon{
+header nav a,
+.icon {
     display: flex;
 }
 
-header li{
-    margin: 3rem 0.25rem;
+header li {
+    margin: 2.5rem 0.25rem 1rem;
 }
 
 .number {
@@ -63,7 +70,7 @@ header li{
     height: 1.5rem;
     position: absolute;
     top: -0.7rem;
-    right: -0.4rem;
+    right: -0.6rem;
 }
 
 .icon {
@@ -71,9 +78,35 @@ header li{
     margin-right: 0.7rem;
 }
 
-header ul li:nth-of-type(3) svg{
+header ul li:nth-of-type(3) svg {
     margin-right: 0.8rem;
 }
 
-/* Media Query */
+header nav a:hover {
+    color: var(--accent);
+}
 
+/* Media Query */
+@media screen and (min-width:960px) {
+
+    header .container,
+    header ul {
+        display: flex;
+    }
+
+    header .container {
+        padding: 0.8rem;
+        justify-content: space-between;
+    }
+
+    header ul {
+        gap: 2rem;
+    }
+
+    header ul,
+    header li {
+        margin: 0;
+    }
+
+
+}
